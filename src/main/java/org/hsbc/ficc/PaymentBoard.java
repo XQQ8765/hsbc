@@ -2,6 +2,11 @@ package org.hsbc.ficc;
 
 import java.util.*;
 
+/**
+ * Usage for this class:
+ * 1. Restore the user new input "Payment" into a Queue, the "Payment" will be removed from the Queue after calculated.
+ * 2. Provide method to calculate the total Payment for each currency.
+ */
 public class PaymentBoard {
     private Map<String, Integer> currencyTotalMap;
     private Queue<Payment> newAddedPaymentsQueue;

@@ -1,7 +1,8 @@
 package org.hsbc.ficc;
 
-import java.util.Arrays;
-
+/**
+ * Util class for convert a payment string to "Payment" class.
+ */
 public class PaymentUtil {
     public static Payment toPayment(String paymentStr) {
         if (paymentStr == null || paymentStr.trim().length() <= 1) {

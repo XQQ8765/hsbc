@@ -4,6 +4,9 @@ import java.time.Instant;
 import java.util.Map;
 import java.util.TimerTask;
 
+/**
+ * The scheduled task for calculating and print Total Payments for each currency periodically.
+ */
 public class PrintPaymentBoardTimerTask extends TimerTask {
     private PaymentBoard paymentBoard;
 

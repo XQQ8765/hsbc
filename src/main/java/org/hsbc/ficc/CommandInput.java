@@ -5,6 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+/**
+ * This class accept user input for adding "Payment" into "PaymentBoard" class.
+ * If a wrong format "Payment" is input, it will display the error message and will be skipped.
+ */
 public class CommandInput {
     private PaymentBoard paymentBoard;
     private Scanner scanner;
