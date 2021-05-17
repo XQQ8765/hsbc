@@ -25,7 +25,6 @@
                     <archive>
                         <manifest>
                             <mainClass>org.hsbc.ficc.AppMain</mainClass>
-                            //主程序入口类，可以按住control，单机定位到该类
                         </manifest>
                     </archive>
                 </configuration>
