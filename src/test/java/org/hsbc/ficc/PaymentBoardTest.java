@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
 public class PaymentBoardTest {
 
     @Test
@@ -23,5 +26,9 @@ public class PaymentBoardTest {
         paymentBoard.addPayment(new Payment("HKD", 200));
 
         Map<String, Integer> totalPaymentsMap = paymentBoard.calculateTotalPayments();
+        assertEquals(900, totalPaymentsMap.get("USD").intValue());
+        assertEquals(300, totalPaymentsMap.get("HKD").intValue());
+        assertEquals(2000, totalPaymentsMap.get("CNY").intValue());
+        assertNull(totalPaymentsMap.get("XYZ"));
     }
 }

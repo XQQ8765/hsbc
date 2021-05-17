@@ -14,7 +14,7 @@ public class PaymentBoard {
     public synchronized void addPayment(Payment payment) {
         if (payment != null) {
             newAddedPaymentsQueue.add(payment);
-            System.out.println("Add payment:" + payment);
+            System.out.println("PaymentBoard: Add payment:" + payment);
         }
     }
 

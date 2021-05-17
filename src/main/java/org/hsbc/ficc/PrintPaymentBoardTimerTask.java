@@ -13,8 +13,12 @@ public class PrintPaymentBoardTimerTask extends TimerTask {
 
     @Override
     public void run() {
-        System.out.println("Current time is:" + Instant.now());
+        System.out.println();
+        System.out.println("-------------PrintPaymentBoardTimerTask-------------");
+        System.out.println("Current time is:" + Instant.now() + ", Total payments:");
         Map<String, Integer> currencyTotalMap = paymentBoard.calculateTotalPayments();
-        currencyTotalMap.entrySet().stream().forEach(entry -> System.out.println(entry.getKey() + " " + entry.getValue()));
+        currencyTotalMap.entrySet().stream().forEach(entry -> System.out.println("  " + entry.getKey() + " " + entry.getValue()));
+        System.out.println("----------------------------------------------------");
+        System.out.println();
     }
 }

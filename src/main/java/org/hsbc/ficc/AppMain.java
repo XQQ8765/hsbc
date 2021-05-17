@@ -9,9 +9,14 @@ public class AppMain {
 
         Timer timer = new Timer();
         TimerTask printTask = new PrintPaymentBoardTimerTask(paymentBoard);
-        timer.schedule(printTask, 1000l, 60 * 1000l);
+        //Delay 1 min, and schedule for each 1 min.
+        timer.schedule(printTask, 60 * 1000l, 60 * 1000l);
 
         CommandInput commandInput = new CommandInput(paymentBoard);
         commandInput.acceptInput();
+
+        System.out.println("AppMain: Cancel the timer task.");
+        timer.cancel();
+        System.out.println("AppMain: The application is quit.");
     }
 }
