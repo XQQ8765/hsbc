@@ -17,4 +17,8 @@ public class Payment {
         return amount;
     }
 
+    @Override
+    public String toString() {
+        return new StringBuilder(currency).append(' ').append(amount).toString();
+    }
 }

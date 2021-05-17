@@ -13,6 +13,7 @@ public class PaymentUtilTest {
         assertNull(PaymentUtil.toPayment("usd123"));
         assertNull(PaymentUtil.toPayment("Usd 123"));
         assertNull(PaymentUtil.toPayment("USD 123a"));
+        assertNull(PaymentUtil.toPayment("USD     123"));
         Payment payment = PaymentUtil.toPayment("USD 123");
         assertEquals("USD", payment.getCurrency());
         assertEquals(123, payment.getAmount());

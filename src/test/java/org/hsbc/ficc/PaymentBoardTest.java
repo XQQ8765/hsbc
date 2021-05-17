@@ -2,6 +2,8 @@ package org.hsbc.ficc;
 
 import org.junit.Test;
 
+import java.util.Map;
+
 public class PaymentBoardTest {
 
     @Test
@@ -20,6 +22,6 @@ public class PaymentBoardTest {
         paymentBoard.addPayment(new Payment("CNY", 2000));
         paymentBoard.addPayment(new Payment("HKD", 200));
 
-        paymentBoard.calculateTotalPayments();
+        Map<String, Integer> totalPaymentsMap = paymentBoard.calculateTotalPayments();
     }
 }
