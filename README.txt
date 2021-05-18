@@ -18,4 +18,4 @@ Current time is:2021-05-17T12:18:48.106Z, Total payments:
 
 
 
-4. A demo video: demo.video.
+4. A demo video: demo.gif.
